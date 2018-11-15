@@ -1,0 +1,528 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script>
+				
+			$(document).ready( function(){
+			
+			
+				//menu 
+				var menu_slider = $(".menu_slider");
+				
+				menu = $(".menu_items");
+				pages=$(".pages");
+				Intro_items=$(".Intro_items");
+			
+				menu.hide();
+				pages.hide();
+				
+				
+				
+				
+				menu_slider.click(function(){
+				
+				menu.slideToggle(500);
+				
+				pages.slideToggle(500);
+				Intro_items.slideToggle(500);
+				
+			
+				});
+				menu.click(function(){
+				});
+				
+				
+				
+				//////////////menu
+				video_img=$("#video img");
+				video_img.hover(function(){
+				
+				$(this).animate({
+				
+				width:"55%",
+				opacity: 0.5
+				
+				},800);
+				
+				
+				},function(){
+				
+				$(this).animate({
+				width:"50%",
+				opacity: 1
+				},800);
+				
+				
+				});
+				
+				
+			});
+		
+		</script>
+		
+		<title>B.J.Y. work space</title>
+		<style>
+			/*for all aerea and class*/
+			
+			*{
+				
+				margin: 0 auto;
+				text-align:center;
+							
+			
+			}
+			
+			a{
+			
+			text-decoration:none;
+			color:black;
+			
+			}
+			h1{
+			font-size:300%;
+			
+			}
+
+			
+			h2{
+			
+				font-size:200%;
+				
+			
+			}
+			.pages{
+			
+				width:100%;
+				height:200%;
+			
+			}
+			
+			/*into page*/
+			#header_menu{
+			color:#FF0040;
+			
+			}
+			#Intro{
+			
+				background-color:#FACC2E;
+				height:100%;
+				
+			
+			}
+			#menu{
+			border-weight:2px;
+			border-style:dashed;
+			border-weight:5px;
+			border-radius:15px;
+			height:80%;
+	
+			}
+			.menu_slider{
+			
+			font-size:150%;
+			width:50%;
+			height:10%;
+			
+			}
+			.menu_items{
+			
+			font-size:150%;
+			width:50%;
+			height:10%;
+			
+			}
+			.menu_items:hover{
+			
+			background-color:rgba(255,51,51,0.3);
+			border-radius:30px;
+			
+			}
+			img{
+			border-weight:5px;
+			border-radius:15px;
+			border-style:dashed;
+			margin:40px;
+			
+			
+			}
+			
+			/*coding page*/
+			#coding_haed{
+				color:#00FF40;
+			}
+			#coding{
+				
+				background-color:#241E1B;
+				border-style:dashed;
+				border-radius:5px;
+				border-color:#00FF40;
+				color:#00FF40;
+			
+			}
+			/*design page*/
+			#design_haed{
+			
+				color:#f10f4f4;
+			}
+			#design{
+			
+			background-color:$f0f0f0;
+			
+			}
+			
+			.video_img{
+			
+			width:50%;
+			
+			
+			}
+			
+			/*video_page*/
+			
+			#video{
+			
+			background-color:black;
+			color:white;
+			overflow:scroll;
+			
+			}
+			#video h2{
+
+			color:white;
+
+			}
+		
+			#video p{
+			
+			text-align:left;
+			color:white;
+			
+			}
+			
+			
+			#web_Info{
+			color:white;
+			background-color:black;
+			
+			
+			}
+			/*coding*/
+			
+			#coding{
+			
+			overflow:scroll;
+			
+			
+			}
+			#coding img{
+			
+			width:50%;
+			
+			
+			
+			}
+			#fish{
+			width:25%;
+			display:inline;
+			
+			}
+			
+			/*design_page*/
+			
+			#design{
+			
+			background-image:url("Working.png");
+			background-color:#F6CED8;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:30%;
+			
+			
+			}
+			
+			
+		</style>
+	
+	</head>
+	
+	<body>
+			
+			<div id="Intro" class="pages2">
+				<h1  id="main_head" class="headers">B.J.Y's Works</h1>
+				<br/>
+				<div id="menu" class="items">
+						<h2 id="header_menu" class="headers" >Menus</h2>
+						
+					
+						
+						<div id='click' class="texts">click</div>
+					<div id="slide_btn1" class="menu_slider">▼</div>
+					<div id="coding_menu" class="menu_items"><a href="#coding_haed"><b>/*Coding*/</b></a></div>
+					<div id="desing_menu" class="menu_items"><a href="#design_haed" ><b><del>Design</del></b></a></div>
+					<div id="video_menu" class="menu_items"><a href="#video_haed"><b>Video</b></a></div>
+					<!--<div id="picture_menu" class="menu_items"><a href="#picture_haed"><b>Pictures</b><a/></div>-->
+					<div id="info_menu" class="menu_items"><a href="#web_Info"><b>Web info</b><a/></div>
+					<div id="slide_btn2" class="menu_slider">▲</div>
+					<img src="profile.png" width="100px" height="100px" class="Intro_items"/>
+					<p id="Iteam_p1" class="Intro_items"> 글로벌 미디어학부 2학년 변주영!<br/>이 페이지는 제가 했던 미디어와 관련된 활동들을 모아 정리한 페이지입니다.
+
+					 </p>
+					<br/>
+				</div>
+				
+			</div>
+		
+		
+		
+		
+			<div id="coding" class="pages">
+				<h2 id="coding_haed" class="headers">printf("Coding");</h2>
+				<br/><br/>
+				
+				<h3>Languages</h3>
+				<br/>
+				<b>이러한 언어들을 다룰 수 있어요!</b>
+				<br/><br/>
+				<h3>C</h3>
+				<h3>C++</h3>
+				<h3>JAVA</h3>
+				<h3>Python</h3>
+				<h3>Node j.s</h3>
+				<h3>HTML+CSS+JS</h3>
+				<br/><br/>
+				<hr/>
+				<h2>Tools + Platform</h2>
+				<br/><br/>
+				<h3>android</h3>
+				<br/><br/>
+				<h4>My Little Aquarium</h4>
+				<br/>
+				<img id="fish" src=".\android\android_gmae_fish.jpg"/>
+				<p>고급 프로그래밍 시간에 안드로이트 스튜디오를 이용해 어플을 만드는 과제가 있어서 만들게 된 물고기 키우기 게임입니다. 이 게임은 3일에 걸쳐 만들어 졌고 두개의 서로다른 이미지가 정해진 범위 내로 겹치게 되면 이벤트를 일으켜 물고기에게 먹이를 먹이고, 사용자의 선택에 따라 성장이 완료 되었을 때 나오는 물고기가 달라지는 방식의 게임 입니다.</p>
+				<br/><br/>
+				<hr/>
+				<h3>Unity</h3>
+				<h3>my star</h3>
+				<img src="unity_game.png"/>
+				<p>마야를 이용해 케릭터와 지물들을 모델링한 후 유니티를 이용해 적을 피해 아이템을 먹는 게임을 만들어 보았습니다.</p>
+				<hr/>
+				<h3>Processing</h3>
+					<a href="Museum/theCyclopse/theCyclopse.html"><image src="museum.png" /></a>
+				
+
+  <script language="javascript" type="text/javascript" src="java_web_hostng_test.js"></script>
+
+
+				<hr/>
+
+				<h3>Arduino</h3>
+				<hr/>
+			
+			</div>
+			<div id="design" class="pages">
+			
+			
+					<h2 id="design_haed" class="headers">Design</h2>
+					
+					<p>Sorry! I will serve this page as soon as I can!  </p>
+			
+			
+				
+			
+			</div>
+			
+			<div id="video" class="pages">
+			
+				<h2 id="video_haed" class="headers"> Video </h2>
+					
+				<h2>BP's Creative.A.D</h2>
+				
+				<img src="Youtube.jpg" id="img1"  class="video_img"/>
+				
+				<p>
+				고등학교 생활을 하면서 영상/광고 동아리 C.A.D 를 운영했습니다. 동아리 운영중, 여러 일이 있었지만 그 중 가장 기억에 남는 일은 학생회와 연결해 관련 영상을 찍고, 행사가 있을 때 상영하는 것이었습니다. 이 유튜브 채널은 이 활동을 위해서 만들어진 채널로서 4가지 작품을 담고 있습니다.
+				</p>
+				<br/><br/>
+				<hr/>
+				<h2>회장의 정석</h2>
+				<a href="https://youtu.be/Beq6Jnu6ncE"><img src="Youtube_1.jpg" id="img1"  class="video_img"/></a>
+				
+				
+								<br/><b>사진 눌러 재생</b>
+
+				<p>
+				<b>제작</b><br/>
+				연출 :정윤찬,박영훈,변주영<br/>
+				촬영:변주영<br/>
+				편집:박영훈<br/>
+ <br/>
+				인물<br/>
+ 
+				회장: 정윤찬 버스운전기사(부회장):박정근 여자(부회장):윤현지<br/>
+				햄버거,도움친구:진범진 짜장면:추재인 짬뽕:박영훈 <br/><br/>
+
+				장비:canon 600d ,50.8mm렌즈, 18-55mm 렌즈 ,ROED PRO<br/><br/>
+
+
+				이 작품은 회장이 어떠한 자질을 가지고 있어야하는지에 대해 몸소 보여주는 회장 후보에 대한 영상입니다.
+				영상을 시작하게된 초반에 찍은 작품으로서 퀄러티는 낮지만 전교생 대중을 대상으로 상영한 첫 영상으로 개인적으론 굉장히 의미있는 영상입니다. </p>
+				<br/><br/><br/><hr/>
+				
+				<h2>육민관 고등학교 소개-학교의법칙</h2>
+				<a href="https://youtu.be/ut3BcgPInts"><img src="Youtube_2.jpg" id="img1"  class="video_img"/></a>
+				
+				
+				<br/><b>사진 눌러 재생</b>
+				<p>
+				
+				
+				<b>제작</b><br/><br/>
+				연출 :박영훈,변주영,정윤찬<br/>
+				촬영:변주영<br/>
+				촬영보조:박영훈<br/>
+				편집:1.박영훈2.변주영<br/><br/>
+ 
+				인물<br/><br/>
+ 
+				회장: 정윤찬 목도리도마뱀(포식자):조성* vj:변주영<br/>
+				창규오:오창규  선도부:김효엄,조성근,박영훈 <br/><br/>
+
+				장비:canon 600d ,50.8mm렌즈, 18-55mm 렌즈 ,ROED PRO<br/><br/>
+				
+					이 작품은 학교를 알리기 위해 촬영한 작품으로서 학교의 5가지 특성을 과장된 연출과 색다른 해석을 통해 웃음을 이끌어 내고 이를 통해 학교를 홍보하는 영상입니다.  
+				</p><br/><br/><br/><hr/>
+				<br/><br/><br/><br/><br/><br/>
+				<h2>학생회의 고충</h2>
+				<a><img src="Youtube_3.jpg" id="img1"  class="video_img"/></a>	
+				
+				
+				<br/><b>사진눌러 재생</b>
+				<p>
+				
+				기획-학생회<br/>
+				촬영-변주영,정윤찬<br/>
+				편집-박영훈,변주영<br/>
+				출연-변주영,정윤찬,정윤주,심유정,정원기,신윤철,추재인,진범진<br/><br/>
+ 
+				카메라-600D
+				
+				
+					이 작품은 학생회가 학교를 위해 일 하면서 학생들이나 선생님들께 서운했던 일들을 희화화를 통해 드러낸 작품입니다.  
+				
+				</p>
+				<br/><br/><br/><hr/>
+				<h2>내가 연애를 하지 못 하는 이유</h2>
+				<a href="https://youtu.be/gRs9BhMGbwk"><img src="Youtube_4.jpg" id="img1"  class="video_img"/></a>
+				<br/><b>사진 눌러 재생</b><br/>
+				
+				
+				<p>
+		
+				기획-박영훈,변주영,정윤찬<br/>
+				촬영-변주영<br/>
+				편집-박영훈 변주영<br/>
+				출연-정윤찬,박태성,손동희,신다해,오창규,심유정<br/><br/>
+
+				카메라 600D 렌즈 18-55<br/>
+
+				마이크boya-pvm1000<br/><br/>
+
+				남자들이 여자를 만나지 못 하는 이유를 과장해 재미있게 표현한 영상 입니다.
+
+					
+				
+				</p>
+				<br/><br/><br/><hr/>
+				
+				
+			
+			</div>
+			<!--
+			<div id="picture" class="pages">
+				<h2 id="picture_haed" class="headers">Pictures</h2>
+				</div>-->
+			<div id="web_Info" class="pages">
+				<h2 id="Info_haed" class="headers">Web Info</h2>
+			
+				
+				Made by : Byeon Ju Yeoung 
+				in : 2018-06-14
+				</p>
+				<hr/>
+				<br/>
+				<h3>메뉴 구동부</h3>
+				<br/>
+				<p>	
+				menu.hide();</br>
+				pages.hide();</br>
+				<br/>
+				menu_slider.click(function(){
+				<br/>
+				menu.slideToggle(500);
+				<br/>
+				pages.slideToggle(500);<br/>
+				Intro_items.slideToggle(500);
+				<br/>
+				});
+				<br/>
+				<p>jquery를 이용해서 메뉴의 슬라이드 업과 다운을 구현했습니다.
+				또한 메뉴가 숨겨져 있을 때는 페이지 소개 메시지와 이미지가 보이고 매뉴가 보이도록 버튼을 클릭하면 소개 메시지와 이미지가 사라지도록 했습니다.
+				
+				</p>
+				<hr/><br/>
+				<h3>coding</h3><br/>
+				<p>
+				h테그를 이용해 내용을 구성하고 
+				img 테그를 이용해 이미지를 띄웠습니다.
+				overflow:scroll 을 이용해 내부 콘텐츠가 div를 넘어가면 스크롤창이 생기도록 했습니다.
+				이미지 크기는 css에서 %로 지정해주어서 어느 화면에서나 적정한 크기로 볼 수 있도록 하왔습니다.
+				</p>
+				<hr/><br/>
+				<h3>video</h3><br/>
+				
+				<p>
+				overflow:scroll 을 이용해 내부 콘텐츠가 div를 넘어가면 스크롤창이 생기도록 했습니다.
+				이미지 크기는 css에서 %로 지정해주어서 어느 화면에서나 적정한 크기로 볼 수 있도록 하였습니다.
+				그리고 이미지에 마우스를 가져가면
+				jquery중 hover기능과 animate을 이용해 사진이 확대되고 흐릿해집니다. 
+				그리고 a 테그를 이용해 사진을 클릭하면 유튜브로 이동해 영상을 볼 수 있게 됩니다.
+				
+				</p><br/>
+				<h2>사용한 테그들</h2>
+				
+				<p>
+				1. p<br/>
+				2. b<br/>
+				3. br<br/>
+				4. hr<br/>
+				5. 헤더테그<br/>
+				6. img<br/>
+				7. del<br/>
+				</p>
+				
+				<br/>
+				<h2>사용한 css 옵션</h2>
+				
+				<p>
+				1. width<br/>
+				2. height<br/>
+				3. display<br/>
+				4. background관련<br/>
+				5. border관련<br/>
+				6. overflow<br/>
+				7. text-align<br/>
+				8. font-size<br/>
+				</p>
+			
+				
+			</div>
+			
+			
+	
+	
+	</body>
+
+
+</html>
